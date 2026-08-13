@@ -2,7 +2,7 @@
 nixPkgs = ["nodejs_22"]
 
 [phases.install]
-cmds = ["rm -f package-lock.json", "npm install --force"]
+cmds = ["rm -f package-lock.json", "npm install --force", "npm install @rolldown/binding-linux-x64-gnu --force"]
 
 [phases.build]
 cmds = ["npm run build"]
